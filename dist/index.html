@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"  href="/css/style.css">
+    <title>台灣旅遊</title>
+  <script type="module" crossorigin src="/assets/index.67b8ea7d.js"></script>
+  <link rel="stylesheet" href="/assets/index.48fa63fb.css">
+</head>
+
+<body>
+<div class="container-fluid">   
+    <div class="row">
+        <div class="col-auto px-0">
+            <header class="header">
+                 <img class="logo" src="/images/logo.svg" alt="台灣旅遊">
+                 <section class="input-group mb-3 section_allsearch">
+                     <input type="text" class="form-control searchInput" placeholder="搜尋關鍵字"
+                         aria-label="Recipient's username" aria-describedby="button-addon2">
+                     <div class="input-group-append">
+                         <button class="btn btn-outline-secondar btn_fliter" type="button"
+                             id="button-addon2">                            
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+                            </button>
+                     </div>
+                 </section>
+                 <section class="section_eventSearch">
+                    <div class="input-group mb-3 w-100">
+                        <select class="form-control form-group" id="inputGroup" name="sellist1" required>
+                            <option value="">請選擇地點</option>
+                            <option value="Taipei">Taipei</option>
+                            <option value="NewTaipei">NewTaipei</option>
+                            <option value="Taoyuan">Taoyuan</option>
+                            <option value="Taichung">Taichung</option>
+                            <option value="Tainan">Tainan</option>
+                            <option value="Kaohsiung">Kaohsiung</option>
+                            <option value="Keelung">Keelung</option>
+                            <option value="Hsinchu">Hsinchu</option>
+                            <option value="HsinchuCounty">HsinchuCounty</option>
+                            <option value="MiaoliCounty">MiaoliCounty</option>
+                            <option value="ChanghuaCounty">ChanghuaCounty</option>
+                            <option value="NantouCounty">NantouCounty</option>
+                            <option value="YunlinCounty">YunlinCounty</option>
+                            <option value="ChiayiCounty">ChiayiCounty</option>
+                            <option value="Chiayi">Chiayi</option>
+                            <option value="PingtungCounty">PingtungCounty</option>
+                            <option value="YilanCounty">YilanCounty</option>
+                            <option value="HualienCounty">HualienCounty</option>
+                            <option value="TaitungCounty">TaitungCounty</option>
+                            <option value="KinmenCounty">KinmenCounty</option>
+                            <option value="PenghuCounty">PenghuCounty</option>
+                            <option value="LienchiangCounty">LienchiangCounty</option>
+                        </select>
+
+
+                    </div>
+                    <input type="date" class="form-control" id="date" name="date">
+                    <div class="btn btn_search mt-3">
+                        搜尋活動
+                    </div>
+                 </section>
+                 
+                 <div class="row featuredtheme">
+                     <div class="col-12">
+                         <h4 class="title">精選主題</h4>
+                     </div>
+                     <div class="col-6 img_feature">
+                         <img src="/images/01.svg" alt="">
+                         <h5>歷史文化</h5>
+                     </div>
+                     <div class="col-6 img_feature">
+                         <img src="/images/02.svg" alt="">
+                         <h5>戶外踏青</h5>
+                     </div>
+                     <div class="col-6 img_feature">
+                         <img src="/images/03.svg" alt="">
+                         <h5>宗教巡禮</h5>
+                     </div>
+                     <div class="col-6 img_feature">
+                         <img src="/images/04.svg" alt="">
+                         <h5>親子活動</h5>
+                     </div>
+                     <div class="col-6 img_feature">
+                         <img src="/images/05.svg" alt="">
+                         <h5>風景區</h5>
+                     </div>
+                     <div class="col-6 img_feature">
+                         <img src="/images/06.svg" alt="">
+                         <h5>美食品嘗</h5>
+                     </div>
+                     <div class="col-6 img_feature">
+                         <img src="/images/07.svg" alt="">
+                         <h5>住宿</h5>
+                     </div>
+                     <div class="col-6 img_feature">
+                         <img src="/images/08.svg" alt="">
+                        
+                         <h5>觀光活動</h5>
+                     </div>
+                 </div>
+            </header>
+        </div>
+        <main class="col">
+            <div class="banner">
+                <img src="/images/index_banner.jpg" alt="">
+            </div>
+            <div class="in_block">
+                <h4 class="in_block_title">觀光活動</h4>
+                <div class="row row_sightseeing">
+                    <div class="col-3">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="" alt="">
+                            <div class="card-body">
+                                <h4>${item.name}</h4>
+                                <p class="card-text">${item.description}</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <a class="btn_view" href="page.html?id=${item.id}">View</a>
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="in_block row_hotel">
+                <h4 class="in_block_title">住宿推薦</h4>
+                <div class="row">
+                    <div class="col-3">
+
+                    </div>
+                </div>
+            </div>
+            <div class="in_block row_food">
+                <h4 class="in_block_title">美食品嚐</h4>
+                <div class="row">
+                    <div class="col-3">
+
+                    </div>
+                </div>
+            </div>
+               <div role="main">
+
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1>Album example</h1>
+                <p class="lead text-muted">Something short and leading about the collection below—its contents, the
+                    creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it
+                    entirely.</p>
+                <p>
+                    <a href="#" class="btn btn-primary my-2 btn_Activity">活動</a>
+                    <a href="#" class="btn btn-secondary my-2 btn_ScenicSpot">景點</a>
+                </p>
+            </div>
+        </section>
+       
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row  product_list">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="" alt="">
+                            <div class="card-body">
+                                <h4>${item.name}</h4>
+                                <p class="card-text">${item.description}</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <a class="btn_view" href="page.html?id=${item.id}">View</a>
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
+            <p>New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
+                    href="/docs/4.6/getting-started/introduction/">getting started guide</a>.</p>
+        </div>
+    </footer>
+
+             
+        </main>
+    </div>
+</div>
+    
+
+ 
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+
+    <!-- <script type="module" src="/src/main.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/3.2.0/sha.js
+"></script>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+
+    
+
+</html>

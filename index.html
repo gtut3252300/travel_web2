@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>台灣旅遊</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img class="logo" src="/images/logo.svg" alt="台灣旅遊">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">           
+            <form class="form-inline d-flex my-2 my-lg-0">
+                <input class="form-control mr-sm-2 input_search " type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0 btn_filter" type="button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+    </nav>
+    <div class="inside_activity container-fluid">
+        <div class="row">
+        <header class="header">
+            
+            <h2 class="title">
+                <img src="/assets/img/taiwan_title.svg" alt="台灣美麗的寶島">
+            </h2>
+            <section class="section_eventSearch">
+                <div class="input-group mb-3 w-100">
+                    <select class="form-control form-group" id="inputGroup" name="sellist1" required>
+                        <option value="">請選擇地點</option>
+                        <option value="Taipei">Taipei</option>
+                        <option value="NewTaipei">NewTaipei</option>
+                        <option value="Taoyuan">Taoyuan</option>
+                        <option value="Taichung">Taichung</option>
+                        <option value="Tainan">Tainan</option>
+                        <option value="Kaohsiung">Kaohsiung</option>
+                        <option value="Keelung">Keelung</option>
+                        <option value="Hsinchu">Hsinchu</option>
+                        <option value="HsinchuCounty">HsinchuCounty</option>
+                        <option value="MiaoliCounty">MiaoliCounty</option>
+                        <option value="ChanghuaCounty">ChanghuaCounty</option>
+                        <option value="NantouCounty">NantouCounty</option>
+                        <option value="YunlinCounty">YunlinCounty</option>
+                        <option value="ChiayiCounty">ChiayiCounty</option>
+                        <option value="Chiayi">Chiayi</option>
+                        <option value="PingtungCounty">PingtungCounty</option>
+                        <option value="YilanCounty">YilanCounty</option>
+                        <option value="HualienCounty">HualienCounty</option>
+                        <option value="TaitungCounty">TaitungCounty</option>
+                        <option value="KinmenCounty">KinmenCounty</option>
+                        <option value="PenghuCounty">PenghuCounty</option>
+                        <option value="LienchiangCounty">LienchiangCounty</option>
+                    </select>
+                </div>
+                <input type="date" class="form-control" id="date" name="date">
+                <div class="btn btn_search mt-3">
+                    搜尋活動
+                </div>
+            </section>
+
+            <div class="row featuredtheme">
+                <div class="col-12">
+                    <h4 class="title">精選主題</h4>
+                </div>
+                <div class="col-6 img_feature btn_futer" data-categoly="文化類">
+                    <a href="#">
+                        <img src="/images/01.svg" alt="歷史文化">
+                        <h5>歷史文化</h5>
+                    </a>
+
+                </div>
+                <div class="col-6 img_feature btn_outdoor">
+                    <a href="#" data-categoly="生態類">
+                        <img src="/images/02.svg" alt="戶外踏青">
+                        <h5>戶外踏青</h5>
+                    </a>
+
+                </div>
+                <div class="col-6 img_feature btn_religion">
+                    <a href="#" data-categoly="自然風景類">
+                        <img src="/images/03.svg" alt="自然風景類">
+                        <h5>自然風景類</h5>
+                    </a>
+                </div>
+                <div class="col-6 img_feature btn_parent">
+                    <a href="#" data-categoly="遊憩類">
+                        <img src="/images/04.svg" alt="親子活動">
+                        <h5>親子活動</h5>
+                    </a>
+                </div>
+                <div class="col-6 img_feature btn_landscape">
+                    <a href="#" data-categoly="其他">
+                        <img src="/images/05.svg" alt="其他">
+                        <h5>其他</h5>
+                    </a>
+                </div>
+                <div class="col-6 img_feature btn_food">
+                    <a href="#">
+                        <img src="/images/06.svg" alt="美食品嘗">
+                        <h5>美食品嘗</h5>
+                    </a>
+                </div>
+                <div class="col-6 img_feature btn_hotel">
+                    <a href="#">
+                        <img src="/images/07.svg" alt="住宿">
+                        <h5>住宿</h5>
+                    </a>
+                </div>
+                <div class="col-6 img_feature btn_sightseeing">
+                    <a href="#">
+                        <img src="/images/08.svg" alt="觀光活動">
+                        <h5>觀光活動</h5>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main> 
+            <div class="banner_search">
+                <div class="title_section">
+                    
+                    <div class="subtitle_en">
+                        <div class="tw">來去旅行吧！</div>
+                        <div class="en">Beautiful Formosa Island, Taiwan</div>
+                        <p>提供台灣景點及台灣旅遊行程資訊，整理分類台灣22個縣市旅遊景點，台灣真的很美又很好玩，小兔就把台灣景點分類給大家，超過百個實際走訪過的必玩景點，看要森林步道、秘境瀑布、花園農場，還是親子、情侶、住宿全都搞定。</p>
+                        
+                    </div>
+                    <form class="form-inline d-flex my-2 my-lg-0">
+                        <input class="form-control mr-sm-2 input_search " type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0 btn_filter" type="button">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+                
+                
+
+            </div>          
+
+             <div class="row row_sightseeing content grid">
+                 
+             </div>
+             <nav aria-label="Page navigation example">
+                 <!--   分頁按鈕   -->
+                 <ul class="pagination justify-content-center pages">
+                 </ul>
+             </nav>
+          
+                
+             
+        </main>
+       </div>
+    </div>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/3.2.0/sha.js"></script>
+
+<script src="./node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="./node_modules/axios/dist/axios.min.js"></script>
+
+<script src="https://kit.fontawesome.com/2fcca039d7.js" crossorigin="anonymous"></script>
+<script src="/src/top.js"></script>
+<script src="/src/jsstyle.js"></script>
+</body>
+</html>

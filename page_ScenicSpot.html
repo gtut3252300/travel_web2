@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+     
+       <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+     <link rel="stylesheet" href="/css/style.css">
+    <title>台灣旅遊</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img class="logo" src="/images/logo.svg" alt="台灣旅遊">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+            <form class="form-inline d-flex my-2 my-lg-0">
+                <input class="form-control mr-sm-2 input_search " type="search" placeholder="Search"
+                    aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0 btn_filter" type="button">Search</button>
+            </form>
+        </div>
+    </nav>
+<div class="inside_activity container-fluid">
+    <div class="row">
+       
+        <main class="mx-auto">
+            <div class="page_content">
+                <h1 class="title"></h1>
+                <div class="banner_carousel">              
+                     <div class="swiper banner_Swiper">
+                         <div class="swiper-wrapper swiper-banner">
+                           
+                         </div>
+                         <div class="swiper-button-next"></div>
+                         <div class="swiper-button-prev"></div>
+                             
+                          
+                     </div>
+
+                    
+                </div>
+               
+                <div class="page_description">  
+                </div>
+                <div class="page_attraction  mt-md-5 mt-3">
+                    <h4>景點資訊</h4>
+                    <ul class="content">
+                        <li class="Phone"></li>
+                        <li class="Address"></li>
+                        <li class="OpenTime"></li>
+                        <li class="TicketInfo"></li>
+                        <li class="TravelInfo"></li>
+
+                    </ul>
+                </div>
+                <div class="relevant_carousel">  
+                    <h4 class="page_title">鄰近地點</h4>                  
+                </div>
+                <div class="text-left mt-md-5 mt-3">
+                    <a class="btn_back btn btn-primary" href="index.html">返回</a>
+                </div>
+
+
+
+
+            </div>
+                
+        </main>
+    </div>
+</div>
+
+
+
+
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/3.2.0/sha.js"></script>
+
+<script src="./node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="./node_modules/axios/dist/axios.min.js"></script>
+<script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/2fcca039d7.js" crossorigin="anonymous"></script>
+<script src="/src/top.js"></script>
+<script src="/src/page.js"></script>
+
+
+<script type="module">
+  var swiper = new Swiper(".mySwiper", {
+  navigation: {
+  nextEl: ".swiper-button-next",
+  prevEl: ".swiper-button-prev",
+  },
+  });
+</script>
+</body>
+</html>
